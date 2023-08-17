@@ -1,0 +1,36 @@
+{
+  "name": "weather-cli",
+  "version": "1.0.0",
+  "description": "CLI for getting weather",
+  "private":"false",
+  "main": "index.js", 
+  "browser": "index.js",
+  "bin": "./index.js",
+  "os": ["!win32"],
+  "cpu": ["!arm"],
+  "man": ["./README.md"],
+  "engines": {
+    "node": ">14"
+  },
+ 
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "weather"
+  ],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://purpleschool.ru",
+  "repository": {
+    "type": "git",
+    "url": "https://purpleschool.ru"
+  },
+  "bugs": {
+    "url": "https://purpleschool.ru",
+    "email":"tabproant@gmail.com"
+  }
+  
+}
