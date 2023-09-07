@@ -2,17 +2,25 @@
   "name": "weather-cli",
   "version": "1.0.0",
   "description": "CLI for getting weather",
-  "private":"false",
-  "main": "index.js", 
-  "browser": "index.js",
-  "bin": "./index.js",
-  "os": ["!win32"],
-  "cpu": ["!arm"],
-  "man": ["./README.md"],
+  "private": "false",
+  "main": "weather.js",
+  "browser": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
+  "os": [
+    "!win32"
+  ],
+  "cpu": [
+    "!arm"
+  ],
+  "man": [
+    "./README.md"
+  ],
   "engines": {
     "node": ">14"
   },
- 
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -30,7 +38,11 @@
   },
   "bugs": {
     "url": "https://purpleschool.ru",
-    "email":"tabproant@gmail.com"
+    "email": "tabproant@gmail.com"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "chalk": "^5.3.0",
+    "dedent-js": "^1.0.1"
   }
-  
 }
